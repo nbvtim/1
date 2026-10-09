@@ -53,29 +53,9 @@ function calcSmens(n) {
 
 let s = document.querySelector("select")
 let p = document.querySelector("pre")
-let t = `
-    смена 1 день    [ ${calcSmens(s.value).smens.s_1d} ]
-    смена 1 дночь   [ ${calcSmens(s.value).smens.s_1n} ]
-    смена 2 день    [ ${calcSmens(s.value).smens.s_2d} ]
-    смена 2 ночь    [ ${calcSmens(s.value).smens.s_2n} ]
-    смена 3 день    [ ${calcSmens(s.value).smens.s_3d} ]
-    смена 3 ночь    [ ${calcSmens(s.value).smens.s_3n} ]
-    смена 4 день    [ ${calcSmens(s.value).smens.s_4d} ]
-    смена 4 ночь    [ ${calcSmens(s.value).smens.s_4n} ]
-`
-p.innerText = t
+
 s.addEventListener("input", event=>{
-    let t = `
-    смена 1 день    [ ${calcSmens(s.value).smens.s_1d} ]
-    смена 1 дночь   [ ${calcSmens(s.value).smens.s_1n} ]
-    смена 2 день    [ ${calcSmens(s.value).smens.s_2d} ]
-    смена 2 ночь    [ ${calcSmens(s.value).smens.s_2n} ]
-    смена 3 день    [ ${calcSmens(s.value).smens.s_3d} ]
-    смена 3 ночь    [ ${calcSmens(s.value).smens.s_3n} ]
-    смена 4 день    [ ${calcSmens(s.value).smens.s_4d} ]
-    смена 4 ночь    [ ${calcSmens(s.value).smens.s_4n} ]
-`
-    p.innerText = t
+    
 })
 
 
